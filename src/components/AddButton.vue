@@ -5,12 +5,12 @@
 <script>
     export default {
         name: 'AddButton',
-        props: ['onClick'],
-        methods: {
-            onBtnClick() {
-                this.onClick('OK')
-            }
-        }
+        // props: ['onClick'],
+        // methods: {
+        //     onBtnClick() {
+        //         this.onClick('OK')
+        //     }
+        // }
     }
 </script>
 

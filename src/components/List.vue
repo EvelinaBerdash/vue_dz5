@@ -13,7 +13,7 @@
         name: 'List',
         computed: {
             list() {
-                return this.$store.getters.getPaymentsList
+                return this.$store.getters.getList
             }
         }
     }
