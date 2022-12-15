@@ -13,16 +13,19 @@
     </ul>
     <List />
     <Popup v-if="isPopupActive" v-on:close="hidePopup" />
+    <Pagination v-model="this.$store.currentPage"></Pagination>
   </div>
 </template>
 
 <script>
+import AddButton from '@/components/AddButton.vue';
 import List from '@/components/List.vue';
 import Popup from '@/components/popup.vue';
+import Pagination from '@/components/Pagination.vue';
 
 export default {
   name: "HomeView",
-  components: { List, Popup },
+  components: { List, Popup, AddButton, Pagination },
   data() {
     return {
       isPopupActive: false,
